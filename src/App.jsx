@@ -1,18 +1,15 @@
 import './App.css';
-import data from './data.json';
-import { Section } from './componants/Section';
-import { Title } from './componants/Title';
-import { CardList } from './componants/CardList';
+import { Greeting } from './componants/Greeting';
+import { Message } from './componants/Message';
 
-const text = "Заголовок"
+const name = "Привіт, Юрій!";
+const text = "react - це круто!"
 
 function App() {
   return (
     <>
-      <Section>
-        <Title text={text}/>
-        <CardList data={data}/>
-      </Section>
+        <Greeting name={name}/>
+        <Message text={text}/>
     </>
   )
 }
